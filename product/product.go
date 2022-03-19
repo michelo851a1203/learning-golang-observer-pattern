@@ -10,7 +10,7 @@ type Product struct {
 
 func BuildItemInstanceWithName(name string) *Product {
 	return &Product{
-		Name: "",
+		Name: name,
 	}
 }
 

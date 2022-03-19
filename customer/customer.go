@@ -5,13 +5,13 @@ import "fmt"
 // observer
 
 type Customer struct {
-	id string
+	ID string
 }
 
 func (customer *Customer) GetId() string {
-	return customer.id
+	return customer.ID
 }
 
 func (customer *Customer) Notify(itemName string) {
-	fmt.Printf("send product info to customer : %s - %s\n", customer.id, itemName)
+	fmt.Printf("send product info to customer : %s - notify : %s\n", customer.ID, itemName)
 }
